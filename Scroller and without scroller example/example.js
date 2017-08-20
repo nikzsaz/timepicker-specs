@@ -1,7 +1,7 @@
 angular.module('ui.bootstrap.demo', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 angular.module('ui.bootstrap.demo').controller('TimepickerDemoCtrl', function ($scope, $log) {
   $scope.mytime = new Date();
-
+  
   $scope.hstep = 1;
   $scope.mstep = 15;
 
@@ -29,5 +29,7 @@ angular.module('ui.bootstrap.demo').controller('TimepickerDemoCtrl', function ($
   $scope.clear = function() {
     $scope.mytime = null;
   };
+  
   $scope.myBool = true;
+  
 });
